@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post 'tweets' => 'tweets#create'
   delete 'tweets/:id' => 'tweets#destroy'
   patch 'tweets/:id' => 'tweets#update'
+  get 'tweets/:id' => 'tweets#show'
   get 'tweets/:id/edit' => 'tweets#edit'
   get 'users/:id' => 'users#show'
 end
